@@ -10,6 +10,13 @@
     "prepack": "npm run build",
     "prepare": "npm run build"
   },
+  "homepage": "https://github.com/xyzteams/scapers",
+  "repository": {
+    "url": "https://github.com/xyzteams/scapers.git"
+  },
+  "bugs": {
+    "url": "https://github.com/xyzteams/scapers/issues"
+  },
   "files": [
     "./dist"
   ],

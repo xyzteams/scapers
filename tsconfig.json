@@ -1,0 +1,10 @@
+{
+    "extends": "@sindresorhus/tsconfig",
+    "compilerOptions": {
+        "outDir": "./dist",
+        "rootDir": "./src",
+        "module": "ES6",
+        "moduleResolution": "Node",
+        "allowSyntheticDefaultImports": true
+    }
+}

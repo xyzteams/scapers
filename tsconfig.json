@@ -1,10 +1,21 @@
 {
     "extends": "@sindresorhus/tsconfig",
     "compilerOptions": {
-        "outDir": "./dist",
-        "rootDir": "./src",
-        "module": "ES6",
-        "moduleResolution": "Node",
-        "allowSyntheticDefaultImports": true
-    }
+        "rootDir": "src",
+        "outDir": "dist",
+        "strict": true,
+        "module": "esnext",
+        "target": "es6",
+        "moduleResolution": "node",
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true
+    },
+    "include": [
+        "src"
+    ],
+    "exclude": [
+        "dist",
+        "node_modules"
+    ]
 }

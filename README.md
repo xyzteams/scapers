@@ -38,6 +38,17 @@ to make it better and faster, please delete the modules that don't use this libr
 - [Mr One](https://www.github.com/mrone)
 - [Kaviaan](https://github.com/kaviaann)
 
+## FAQ
+
+#### How to install it?
+
+It's easy, just npm install @xyzteams/scapers
+
+
+#### What support bro?
+
+supports everything like CJS and ESM as well as Typescript
+
 
 ## Contributing
 
@@ -47,24 +58,3 @@ contribute with my friends, all of them are at `contributing.md`
 ## Feedback
 
 If you have any feedback, please reach out to us at xyz.teams@xyzen.tech
-
-
-## Used By
-
-This project is used by the following companies:
-
-- API Zayden
-- Kyuu Project
-- Kiicode Project
-
-
-## FAQ
-
-#### How to install it?
-
-It's easy, just npm install @xyzteams/scapers
-
-#### What support bro?
-
-supports everything like CJS and ESM as well as Typescript
-

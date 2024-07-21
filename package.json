@@ -1,6 +1,6 @@
 {
   "name": "@xyzteams/scapers",
-  "version": "1.0.16-Beta",
+  "version": "0.0.2",
   "type": "module",
   "main": "dist/index.min.cjs",
   "module": "dist/index.min.mjs",

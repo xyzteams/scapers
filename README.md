@@ -35,7 +35,7 @@ to make it better and faster, please delete the modules that don't use this libr
 ## Authors
 
 - [Muhammad Adriansyah](https://www.github.com/xyzencode)
-- [Mr One](https://www.github.com/mrone)
+- [Mr One](https://www.github.com/onepunya)
 - [Kaviaan](https://github.com/kaviaann)
 
 ## FAQ

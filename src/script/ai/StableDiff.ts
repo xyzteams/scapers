@@ -23,7 +23,14 @@ export default function stableDiff(prompt: string, negative: string = ""): Promi
                 }
             );
 
-            resolve(res.data);
+            if (res.data.images && res.data.images.length > 0) {
+                const image = res.data.images[0];
+                const a = image.url.replace(/^data:image\/jpeg;base64,/, '');
+                const b = Buffer.from(a, 'base64');
+                resolve(b);
+            } else {
+                reject({ status: false });
+            }
         } catch (e) {
             reject(e);
         }

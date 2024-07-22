@@ -6,7 +6,7 @@ interface IGDLResult {
     message?: string;
 }
 
-export default async function igdl(url: string): Promise<IGDLResult> {
+export async function v1(url: string): Promise<IGDLResult> {
     try {
         let result: IGDLResult = { status: true, media: [] };
         const { data } = await axios("https://www.y2mate.com/mates/analyzeV2/ajax", {
@@ -31,5 +31,23 @@ export default async function igdl(url: string): Promise<IGDLResult> {
             status: false,
             message: "Media not found"
         };
+    }
+}
+
+export async function v2(url: string): Promise<string[]> {
+    try {
+        const response = await axios.request({
+            method: "GET",
+            url: "https://instagram-post-reels-stories-downloader.p.rapidapi.com/instagram/",
+            params: { url },
+            headers: {
+                "X-RapidAPI-Key": "6a9259358bmshba34d148ba324e8p12ca27jsne16ce200ce10",
+                "X-RapidAPI-Host": "instagram-post-reels-stories-downloader.p.rapidapi.com"
+            }
+        });
+        const urls = response.data.result.map((item: { url: string }) => item.url);
+        return urls;
+    } catch (error) {
+        return [];
     }
 }

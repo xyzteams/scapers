@@ -1,6 +1,6 @@
 import aio from "./aio.js"
 import drive from "./drive.js";
-import igdl from "./igdl.js";
+import * as igdl from "./igdl.js";
 import igStory from "./igstory.js";
 import mediafire from "./mediafire.js";
 import snackVideo from "./snackvideo.js";

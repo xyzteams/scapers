@@ -17,7 +17,7 @@ To run tests, run the following command
 
 ```bash
 import XYZ from "@xyzteams/scapers";
-// import XYZ from "./dist/index.mjs"
+// import XYZ from "./dist/index.min.mjs"
 
 (async () => {
     const url = "https://www.tiktok.com/@xyzenprst/video/7335354879206001927"

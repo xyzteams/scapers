@@ -11,3 +11,7 @@ export function getMimeType(url: string) {
 export function pickRandom(list: any[]) {
     return list[Math.floor(Math.random() * list.length)]
 }
+
+export function fetchJson(url: string) {
+    return axios.get(url).then(res => res.data);
+}

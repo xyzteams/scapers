@@ -6,10 +6,9 @@ import mediafire from "./mediafire.js";
 import terabox from "./terabox.js";
 import threads from "./threads.js";
 import tiktok from "./tiktok.js"
-import youtube from "./youtube.js"
+// import youtube from "./youtube.js"
 import ttslide from "./ttslide.js";
 import twitter from "./twitter.js";
-import getVideoInfo from "./youtube.js";
 import * as snackVideo from "./snackvideo.js";
 
 export {
@@ -21,10 +20,9 @@ export {
     terabox,
     tiktok,
     ttslide,
-    youtube,
+    //youtube,
     aio,
     threads,
     twitter,
-    getVideoInfo
 
 };

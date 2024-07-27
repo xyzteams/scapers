@@ -15,3 +15,15 @@ export function pickRandom(list: any[]) {
 export function fetchJson(url: string) {
     return axios.get(url).then(res => res.data);
 }
+
+export function randomID() {
+    return Math.random().toString(36).substring(2);
+}
+
+export async function randomUUID() {
+    const a = await randomID();
+    const b = await randomID();
+    const c = await randomID();
+    const d = await randomID();
+    return a + "-" + b + "-" + c + "-" + d;
+}

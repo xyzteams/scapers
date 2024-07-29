@@ -1,13 +1,13 @@
 {
   "name": "@xyzteams/scapers",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "type": "module",
   "main": "dist/index.min.cjs",
   "module": "dist/index.min.mjs",
   "types": "dist/index.min.d.ts",
   "scripts": {
     "build": "npm run prepack && npm run prepare",
-    "prepack": "tsc",
+    "prepack": "tsc && typedoc",
     "prepare": "rollup -c"
   },
   "homepage": "https://github.com/xyzteams/scapers",
@@ -44,6 +44,7 @@
     "rollup-plugin-delete": "^2.0.0",
     "rollup-plugin-dts": "^6.1.1",
     "rollup-plugin-typescript2": "^0.36.0",
+    "typedoc": "^0.26.5",
     "typescript": "^5.5.3"
   },
   "engines": {

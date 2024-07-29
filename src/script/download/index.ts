@@ -6,6 +6,7 @@ import mediafire from "./mediafire.js";
 import pindl from "./pindl.js";
 import samehadaku from "./samehadaku.js";
 import * as snackVideo from "./snackvideo.js";
+import spotifydl from "./spotify.js";
 import terabox from "./terabox.js";
 import threads from "./threads.js";
 import tiktok from "./tiktok.js"
@@ -17,6 +18,7 @@ import * as youtube from "./youtube.js"
 export {
     pindl,
     samehadaku,
+    spotifydl,
     igStory,
     drive,
     igdl,

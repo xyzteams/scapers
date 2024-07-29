@@ -4,7 +4,7 @@ interface AIResponse {
     data: any;
 }
 
-export async function ainews(question: string,): Promise<AIResponse | null> {
+export default async function ainews(question: string,): Promise<AIResponse | null> {
     try {
         const response = await axios.post<AIResponse>('https://api.hai.news/question', {
             chat_id: '9ea5fef5-bbea-4e13-a3d8-3998bb58d344',

@@ -20,6 +20,13 @@ export function randomID() {
     return Math.random().toString(36).substring(2);
 }
 
+export function getBuffer(url: string) {
+    return axios.get(url, { responseType: "arraybuffer" }).then(res => Buffer.from(res.data));
+}
+
+export function fetchBuffer(url: string) {
+    return axios.get(url, { responseType: "arraybuffer" }).then(res => res.data);
+}
 export async function randomUUID() {
     const a = await randomID();
     const b = await randomID();

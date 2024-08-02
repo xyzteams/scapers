@@ -1,10 +1,10 @@
 {
   "name": "@xyzteams/scapers",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "type": "module",
-  "main": "dist/index.min.cjs",
-  "module": "dist/index.min.mjs",
-  "types": "dist/index.min.d.ts",
+  "main": "lib/index.min.cjs",
+  "module": "lib/index.min.mjs",
+  "types": "lib/index.min.d.ts",
   "scripts": {
     "build": "npm run prepack && npm run prepare",
     "prepack": "tsc && typedoc",
@@ -18,7 +18,7 @@
     "url": "https://github.com/xyzteams/scapers/issues"
   },
   "files": [
-    "./dist"
+    "./lib"
   ],
   "keywords": [
     "scapers",
@@ -37,7 +37,6 @@
   },
   "devDependencies": {
     "@rollup/plugin-terser": "^0.4.4",
-    "@sindresorhus/tsconfig": "^6.0.0",
     "@types/node": "^20.14.11",
     "@types/yt-search": "^2.10.3",
     "rollup": "^4.18.1",

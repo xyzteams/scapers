@@ -8,11 +8,11 @@ export default [
         input: './src/index.ts',
         output: [
             {
-                file: './dist/index.min.mjs',
+                file: './lib/index.min.mjs',
                 format: 'esm',
             },
             {
-                file: './dist/index.min.cjs',
+                file: './lib/index.min.cjs',
                 format: 'cjs',
             }
         ],
@@ -28,13 +28,13 @@ export default [
     {
         input: './src/index.ts',
         output: {
-            file: './dist/index.min.d.ts',
+            file: './lib/index.min.d.ts',
             format: 'es',
         },
         plugins: [
             dts(),
             deletePlugin({
-                targets: ['dist/*', '!dist/index.min.cjs', '!dist/index.min.mjs', '!dist/index.min.d.ts'],
+                targets: ['lib/*', '!lib/index.min.cjs', '!lib/index.min.mjs', '!lib/index.min.d.ts'],
                 hook: 'buildEnd',
                 verbose: true
             })

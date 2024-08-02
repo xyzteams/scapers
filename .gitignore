@@ -1,6 +1,6 @@
 test
 node_modules
-dist
+lib
 package-lock.json
 .env
 plugins

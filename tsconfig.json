@@ -15,7 +15,7 @@
         "resolveJsonModule": true
     },
     "include": [
-        "src"
+        "src",
     ],
     "exclude": [
         "lib",

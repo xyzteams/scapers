@@ -1,5 +1,7 @@
 import typescript from 'rollup-plugin-typescript2';
 import terser from '@rollup/plugin-terser';
+import deletePlugin from 'rollup-plugin-delete';
+import dts from 'rollup-plugin-dts';
 
 export default [
     {
@@ -30,11 +32,12 @@ export default [
             format: 'es',
         },
         plugins: [
-            typescript({
-                tsconfig: './tsconfig.json',
-                clean: true,
-                useTsconfigDeclarationDir: true,
-            }),
+            dts(),
+            deletePlugin({
+                targets: ['lib/*', '!lib/index.d.ts', '!lib/index.cjs', '!lib/index.mjs'],
+                hook: 'buildEnd',
+                verbose: true
+            })
         ]
     }
 ];

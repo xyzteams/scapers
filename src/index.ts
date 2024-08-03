@@ -1,4 +1,4 @@
-import * as Scapers from "./scapers.js"
-import * as Func from "./functions.js"
+import * as Scapers from "./Types/index.js"
+import * as Func from "./Utils/functions.js"
 
 export default { Scapers, Func }

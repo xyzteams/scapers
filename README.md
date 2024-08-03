@@ -16,13 +16,13 @@ Install My Project with npm
 To run tests, run the following command
 
 ```bash
-import XYZ from "@xyzteams/scapers";
-// import XYZ from "./dist/index.min.mjs"
+// import XYZ from "../lib/index.min.mjs"
+import XYZ from "@xyzteams/scapers"
 
 (async () => {
     const url = "https://www.tiktok.com/@xyzenprst/video/7335354879206001927"
-    const res = await XYZ.download.tiktok(url)
-    console.log(res)
+    const data = await XYZ.Scapers.tiktokdl(url)
+    console.log(data)
 })()
 ```
 

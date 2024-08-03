@@ -1,30 +1,24 @@
 {
     "compilerOptions": {
-        "declaration": true,
-        "target": "ESNext",
-        "moduleResolution": "node",
-        "experimentalDecorators": true,
+        "rootDir": "src",
+        "outDir": "dist",
+        "strict": true,
+        "module": "esnext",
         "allowJs": false,
         "checkJs": false,
-        "outDir": "lib",
-        "strict": true,
-        "strictNullChecks": true,
-        "skipLibCheck": true,
-        "noImplicitThis": true,
+        "target": "ES6",
+        "moduleResolution": "node",
         "esModuleInterop": true,
-        "resolveJsonModule": true,
+        "skipLibCheck": true,
+        "declaration": true,
         "forceConsistentCasingInFileNames": true,
-        "lib": [
-            "es2020",
-            "esnext.array",
-            "DOM"
-        ]
+        "resolveJsonModule": true
     },
     "include": [
-        "./src/**/*.ts"
+        "src"
     ],
     "exclude": [
-        "node_modules",
-        "lib"
+        "lib",
+        "node_modules"
     ]
 }
